@@ -113,7 +113,7 @@
             <br />
           <asp:GridView ID="GridView1" runat="server" 
                 CssClass="table table-responsive table-striped" AutoGenerateColumns="False" 
-                DataKeyNames="UserId" DataSourceID="LibraryDb">
+                DataKeyNames="UserId" DataSourceID="LibraryDb" AllowPaging="True">
               <Columns>
                  
                   <asp:BoundField DataField="UserId" HeaderText="UserId" 
@@ -121,7 +121,7 @@
                   <asp:BoundField DataField="UserName" HeaderText="User Name" 
                       SortExpression="UserName" />
                     <asp:BoundField DataField="Pwd" HeaderText="Password" SortExpression="Pwd" />
-                   <asp:CommandField  ShowEditButton="True" />
+                   <asp:CommandField  ShowEditButton="True" ShowDeleteButton="True" />
               </Columns>
             </asp:GridView>
             <asp:SqlDataSource ID="LibraryDb" runat="server" 

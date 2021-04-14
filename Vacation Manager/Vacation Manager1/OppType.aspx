@@ -108,7 +108,7 @@
             <br />
           <asp:GridView ID="GridView1" runat="server" 
                 CssClass="table table-responsive table-striped" AutoGenerateColumns="False" 
-                DataKeyNames="OppId" DataSourceID="LibraryDb">
+                DataKeyNames="OppId" DataSourceID="LibraryDb" AllowPaging="True">
               <Columns>
                  
                   <asp:BoundField DataField="OppId" HeaderText="OppId" 
@@ -117,7 +117,7 @@
                       SortExpression="Name" />
                   <asp:BoundField DataField="CreatedbyUserId" HeaderText="CreatedbyUserId" 
                       SortExpression="CreatedbyUserId" Visible="False" />
-                   <asp:CommandField ShowEditButton="True" />
+                   <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
               </Columns>
             </asp:GridView>
             <asp:SqlDataSource ID="LibraryDb" runat="server" 

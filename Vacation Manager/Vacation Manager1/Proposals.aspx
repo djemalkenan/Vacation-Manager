@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
- <style>
+    <style>
         .myddls {
             align-items: center;
             background-color: rgb(255, 255, 255);
@@ -73,7 +73,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
- <center>
+    <center>
         <div>
             <br />
             <br />
@@ -176,7 +176,7 @@
                 DataKeyNames="Id" DataSourceID="LibraryDb">
               <Columns>
                  
-                  <asp:CommandField ShowEditButton="True" />
+                  <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
                  
                   <asp:BoundField DataField="Id" HeaderText="Id" 
                       SortExpression="Id" ReadOnly="True" InsertVisible="False"  />
