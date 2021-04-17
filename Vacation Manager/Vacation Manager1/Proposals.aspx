@@ -160,7 +160,7 @@
                             </td>
                             <td>
                                 <asp:checkbox text="Accept" runat="server" ID="chkStatus" />
-                                &nbsp;&nbsp;  <asp:Button Text="Add User" runat="server" ID="btnAdd" 
+                                  <asp:Button Text="Add User" runat="server" ID="btnAdd" 
                                     class="btn btn-sm btn-primary" OnClick="btnAdd_Click" />
                               
                             </td>

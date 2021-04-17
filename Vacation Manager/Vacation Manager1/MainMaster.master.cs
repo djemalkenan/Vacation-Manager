@@ -36,7 +36,8 @@ namespace Vacation_Manager1
                         case "Manager":
                             myrole = "<ul class='nav navbar-nav' id='mManager'><li>" +
                                          "<a href='Home.aspx'>Home</a></li><li><a href='CreateUsers.aspx'>" +
-                                            "Sales</a></li><li><a href='Comments.aspx'>Announcement</a></li></ul>";
+                                            "Sales</a></li><li><a href='Groups.aspx'>Groups</a></li>" +
+                                                "<li><a href='Comments.aspx'>Announcement</a></li></ul>";
                             break;
 
                         case "Admin":

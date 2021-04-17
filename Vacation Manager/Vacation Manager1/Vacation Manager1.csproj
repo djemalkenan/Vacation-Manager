@@ -82,6 +82,7 @@
     <Content Include="CreateClient.aspx" />
     <Content Include="CreateManager.aspx" />
     <Content Include="CreateUsers.aspx" />
+    <Content Include="Groups.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\intro-bg.jpg" />
     <Content Include="Images\lib.jpeg" />
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="CreateUsers.aspx.designer.cs">
       <DependentUpon>CreateUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Groups.aspx.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Groups.aspx.designer.cs">
+      <DependentUpon>Groups.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

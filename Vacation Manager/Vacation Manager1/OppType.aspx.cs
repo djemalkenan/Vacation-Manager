@@ -26,7 +26,8 @@ namespace Vacation_Manager1
         {
             try
             {
-                SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["VacationConnectionString"].ConnectionString);
+                SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings
+                                                             ["VacationConnectionString"].ConnectionString);
                 SqlCommand cmd = new SqlCommand("insert into OppType_Table (Name,CreatedByUserId) values (@name,@Userid)", conn);
                 cmd.Parameters.AddWithValue("@name", txtStudentId.Text);
                 cmd.Parameters.AddWithValue("@Userid", Session["Userid"].ToString());
